@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>se.kovanen.nes</string>
+	<key>category</key>
+	<string>Internet</string>
+	<key>connections</key>
+	<dict>
+		<key>F8641F59-8201-448D-B51E-01DD024DBCF9</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>A98E7044-D459-48AA-8882-98FCF88397AE</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>A546F83F-8AEC-401C-8ED6-860F28FBACBC</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string>Copy url to clipboard</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Lari Kovanen</string>
+	<key>description</key>
+	<string>Search for Switch game titles on Nintendo Europe E-Shop Region</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Nintendo Europe Search</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>{query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>A98E7044-D459-48AA-8882-98FCF88397AE</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>nes</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>2</integer>
+				<key>queuemode</key>
+				<integer>2</integer>
+				<key>runningsubtext</key>
+				<string>Searching...</string>
+				<key>script</key>
+				<string></string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>nes.rb</string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>Search Nintendo E-Shop</string>
+				<key>type</key>
+				<integer>8</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>F8641F59-8201-448D-B51E-01DD024DBCF9</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>A546F83F-8AEC-401C-8ED6-860F28FBACBC</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>Search for Nintendo Switch game titles on Nintendo Europes E-Shop including South Africa.
+
+When enter is pressed on a search result it will open up the web page for the game.
+
+You can change the number of search results with the rows variable.
+
+Available country codes are as:
+
+AT = Österreich
+BE = België
+CH = Schweiz
+DE = Deutschland
+DK = Danmark (opens site in English)
+ES = España
+FR = France
+FI = Suomi (opens site in English)
+GB = Great Brittain and Ireland (default)
+IT = Italia
+NL = Nederland
+NO = Norge (opens site in English)
+PT = Portugal
+RU = Россия
+SE = Sverige (opens site in English)
+ZA = South Africa</string>
+	<key>uidata</key>
+	<dict>
+		<key>A546F83F-8AEC-401C-8ED6-860F28FBACBC</key>
+		<dict>
+			<key>xpos</key>
+			<integer>380</integer>
+			<key>ypos</key>
+			<integer>230</integer>
+		</dict>
+		<key>A98E7044-D459-48AA-8882-98FCF88397AE</key>
+		<dict>
+			<key>xpos</key>
+			<integer>380</integer>
+			<key>ypos</key>
+			<integer>120</integer>
+		</dict>
+		<key>F8641F59-8201-448D-B51E-01DD024DBCF9</key>
+		<dict>
+			<key>xpos</key>
+			<integer>130</integer>
+			<key>ypos</key>
+			<integer>120</integer>
+		</dict>
+	</dict>
+	<key>variables</key>
+	<dict>
+		<key>country</key>
+		<string>SE</string>
+		<key>rows</key>
+		<string>3</string>
+	</dict>
+	<key>variablesdontexport</key>
+	<array>
+		<string>country</string>
+	</array>
+	<key>version</key>
+	<string>1.0</string>
+	<key>webaddress</key>
+	<string>http://kovanen.se/</string>
+</dict>
+</plist>
