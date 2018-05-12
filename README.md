@@ -1,6 +1,10 @@
 # Nintendo Europe Search
 Alfred 3 plugin to search the Nintendo Europe (including South Africa) region for Switch games and display regular and discounted prices.
 
+# Download
+
+[Download the latest relase from GitHub](https://github.com/larkov/alfred-nes-workflow/releases/latest).
+
 ## Usage
 After installation use the keyword "nes" followed by the game title you are interested in.
 
