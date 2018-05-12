@@ -1,7 +1,14 @@
 # Nintendo Europe Search
 Alfred 3 plugin to search the Nintendo Europe (including South Africa) region for Switch games and display regular and discounted prices.
 
-# Download
+# Requirements
+HTTParty gem needs to be installed.
+
+# Installation
+
+Open the terminal and run below code to install HTTParty.
+
+```sudo gem install httparty```
 
 [Download the latest relase from GitHub](https://github.com/larkov/alfred-nes-workflow/releases/latest).
 
