@@ -8,6 +8,19 @@
 	<string>Internet</string>
 	<key>connections</key>
 	<dict>
+		<key>9D8DA3A3-A910-4DF5-9051-EE885FFF42AD</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>F8641F59-8201-448D-B51E-01DD024DBCF9</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>F8641F59-8201-448D-B51E-01DD024DBCF9</key>
 		<array>
 			<dict>
@@ -45,25 +58,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>{query}</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>A98E7044-D459-48AA-8882-98FCF88397AE</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
@@ -74,8 +68,6 @@
 				<integer>0</integer>
 				<key>escaping</key>
 				<integer>0</integer>
-				<key>keyword</key>
-				<string>nes</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -95,7 +87,7 @@
 				<key>subtext</key>
 				<string></string>
 				<key>title</key>
-				<string>Search Nintendo E-Shop</string>
+				<string>Nintendo E-Shop Search</string>
 				<key>type</key>
 				<integer>8</integer>
 				<key>withspace</key>
@@ -107,6 +99,46 @@
 			<string>F8641F59-8201-448D-B51E-01DD024DBCF9</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>{query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>A98E7044-D459-48AA-8882-98FCF88397AE</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>nes</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Nintendo E-Shop Search</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>9D8DA3A3-A910-4DF5-9051-EE885FFF42AD</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -153,24 +185,31 @@ SE = Sverige (opens site in English)
 ZA = South Africa</string>
 	<key>uidata</key>
 	<dict>
+		<key>9D8DA3A3-A910-4DF5-9051-EE885FFF42AD</key>
+		<dict>
+			<key>xpos</key>
+			<integer>70</integer>
+			<key>ypos</key>
+			<integer>120</integer>
+		</dict>
 		<key>A546F83F-8AEC-401C-8ED6-860F28FBACBC</key>
 		<dict>
 			<key>xpos</key>
-			<integer>380</integer>
+			<integer>550</integer>
 			<key>ypos</key>
 			<integer>230</integer>
 		</dict>
 		<key>A98E7044-D459-48AA-8882-98FCF88397AE</key>
 		<dict>
 			<key>xpos</key>
-			<integer>380</integer>
+			<integer>550</integer>
 			<key>ypos</key>
 			<integer>120</integer>
 		</dict>
 		<key>F8641F59-8201-448D-B51E-01DD024DBCF9</key>
 		<dict>
 			<key>xpos</key>
-			<integer>130</integer>
+			<integer>300</integer>
 			<key>ypos</key>
 			<integer>120</integer>
 		</dict>
@@ -180,14 +219,14 @@ ZA = South Africa</string>
 		<key>country</key>
 		<string>SE</string>
 		<key>rows</key>
-		<string>3</string>
+		<string>9</string>
 	</dict>
 	<key>variablesdontexport</key>
 	<array>
 		<string>country</string>
 	</array>
 	<key>version</key>
-	<string>1.0</string>
+	<string>1.0.1</string>
 	<key>webaddress</key>
 	<string>http://kovanen.se/</string>
 </dict>
