@@ -82,6 +82,8 @@ items.each do |item|
   # arg = item["url"]
   arg = "#{URL}#{item["url"]}"
   out["items"].push({"type" => "default", "title" => "#{title}", "subtitle" => "#{price}", "arg" => arg})
+end.empty? and begin
+  out["items"].push({"type" => "default", "title" => "No results found."})
 end
 
 print out.to_json
